@@ -51,13 +51,6 @@ fun bindUriToImage(imageView: ImageView, stringUrl: String?) {
         .into(imageView)
 }
 
-@BindingAdapter("loadingState")
-fun setGoneIfNotNull(view: View, it: Int) {
-    view.visibility = if (it != 0) View.GONE else View.VISIBLE
-}
-
-
-
 @BindingAdapter("emptyTextDesc")
 fun bindTextViewToEmptyTextDesc(textView: TextView, stringTitle: String?) {
     val context = textView.context

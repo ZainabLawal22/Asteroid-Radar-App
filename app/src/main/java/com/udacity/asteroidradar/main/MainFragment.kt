@@ -2,7 +2,12 @@ package com.udacity.asteroidradar.main
 
 import android.os.Build
 import android.os.Bundle
-import android.view.*
+import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
+import android.view.View
+import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -33,10 +38,15 @@ class MainFragment : Fragment() {
 
         viewModel.pictureOfDay.observe(viewLifecycleOwner) { picture ->
             picture?.let {
-                Picasso.get()
+                Picasso.with(context)
                     .load(it.url)
                     .into(binding.activityMainImageOfTheDay)
+
+                binding.textView.text = it.title
+
+//                binding.statusLoadingWheel.progress = it.mediaType
             }
+
         }
 
         viewModel.navigateToDetailAsteroid.observe(viewLifecycleOwner) { asteroid ->

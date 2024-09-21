@@ -1,9 +1,10 @@
-# Purpose of this Folder
+Project Title:
+Asteroid Radar
 
-This folder should contain the scaffolded project files to get a student started on their project. This repo will be added to the Classroom for students to use, so please do not have any solutions in this folder.
+Welcome to Asteroid Radar! This app lets you explore asteroids detected by NASA that pass close to Earth. You can view detailed information about asteroids spotted over one week, including their size, velocity, distance from Earth, and whether they are considered potentially hazardous.
 
-## Note: Android Kotlin Gradle Update
-Use the updated Gradle version in the `~/gradle/wrapper/gradle-wrapper.properties` file:
-```
-distributionUrl = https\://services.gradle.org/distributions/gradle-8.8-all.zip
-```
+The app features two key screens:
+
+Main Screen: Displays a list of all detected asteroids, along with NASA's image of the day to make the experience more visually engaging.
+Details Screen: Once you select an asteroid from the list, this screen shows more in-depth information about it.
+I created this app not only to bring space data to your fingertips but also to build upon essential Android development skills. By working on this project, I got hands-on experience with tasks like fetching data from the internet, saving it to a local database, and displaying it through a clean, user-friendly interface. If you're diving into Android development, this project is a fantastic way to learn how to interact with real-world APIs like NASA's NeoWS (Near Earth Object Web Service), which you can find here.https://api.nasa.gov/

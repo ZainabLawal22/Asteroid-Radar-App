@@ -1,8 +1,11 @@
-Project Title
+Project Title:
 Asteroid Radar
-Getting Started
-Asteroid Radar is an app to view the asteroids detected by NASA that pass near Earth, you can view all the detected asteroids in a period of time, their data (Size, velocity, distance to Earth) and if they are potentially hazardous.
 
-The app is consists of two screens: A Main screen with a list of all the detected asteroids and a Details screen that is going to display the data of that asteroid once it´s selected in the Main screen list. The main screen will also show the NASA image of the day to make the app more striking.
+Welcome to Asteroid Radar! This app lets you explore asteroids detected by NASA that pass close to Earth. You can view detailed information about asteroids spotted over one week, including their size, velocity, distance from Earth, and whether they are considered potentially hazardous.
 
-This kind of app is one of the most usual in the real world, what you will learn by doing this are some of the most fundamental skills you need to know to work as a professional Android developer, as fetching data from the internet, saving data to a database, and display the data in a clear, clear, compelling UI.
+The app features two key screens:
+
+Main Screen: Displays a list of all detected asteroids, along with NASA's image of the day to make the experience more visually engaging.
+Details Screen: Once you select an asteroid from the list, this screen shows more in-depth information about it.
+I created this app not only to bring space data to your fingertips but also to build upon essential Android development skills. By working on this project, I got hands-on experience with tasks like fetching data from the internet, saving it to a local database, and displaying it through a clean, user-friendly interface. If you're diving into Android development, this project is a fantastic way to learn how to interact with real-world APIs like NASA's NeoWS (Near Earth Object Web Service), which you can find here.
+

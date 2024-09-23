@@ -1,12 +1,15 @@
 package com.udacity.asteroidradar.worker
 
 import android.content.Context
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 
 import com.udacity.asteroidradar.database.getDatabaseInstance
 import com.udacity.asteroidradar.repository.AsteroidRepository
 import retrofit2.HttpException
+import java.time.LocalDate
 
 class AsteroidDataSyncWorker(applicationContext: Context, params: WorkerParameters):CoroutineWorker(applicationContext, params) {
 
@@ -20,6 +23,7 @@ class AsteroidDataSyncWorker(applicationContext: Context, params: WorkerParamete
         return try {
             repository.fetchAsteroids()
             Result.success()
+
         } catch (e: HttpException) {
            Result.retry()
         }

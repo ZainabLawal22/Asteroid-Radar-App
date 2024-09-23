@@ -43,10 +43,11 @@ class AsteroidRadarApplication : Application() {
             .setConstraints(constraints)
             .build()
 
-        WorkManager.getInstance(this).enqueueUniquePeriodicWork(
-            AsteroidDataSyncWorker.WORK_NAME,
-            ExistingPeriodicWorkPolicy.KEEP,
-            repeatingRequest
-        )
+        WorkManager.getInstance(applicationContext)
+            .enqueueUniquePeriodicWork(
+                AsteroidDataSyncWorker.WORK_NAME,
+                ExistingPeriodicWorkPolicy.KEEP,
+                repeatingRequest
+            )
     }
 }

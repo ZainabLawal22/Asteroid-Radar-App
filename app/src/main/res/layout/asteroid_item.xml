@@ -50,7 +50,7 @@
             app:layout_constraintEnd_toStartOf="@+id/guidelineLeft"
             app:layout_constraintTop_toTopOf="@+id/text_title_asteroid"
             app:srcCompat="@drawable/ic_status_potentially_hazardous"
-            android:contentDescription="@{asteroid.codename}"
+            android:contentDescription="@{asteroid.potentiallyHazardous ? @string/hazardous_asteroid : @string/safe_asteroid}"
             app:statusIcon="@{asteroid.potentiallyHazardous}"/>
 
         <androidx.constraintlayout.widget.Guideline

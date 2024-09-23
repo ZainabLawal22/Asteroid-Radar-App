@@ -27,5 +27,4 @@ interface AsteroidDao {
     @Query("SELECT * FROM asteroids WHERE closeApproachDate BETWEEN :startDate AND :endDate ORDER BY closeApproachDate DESC")
     fun getAsteroidsByStartAndEndDate(startDate: String, endDate: String): PagingSource<Int, AsteroidEntity>
 
-
 }
